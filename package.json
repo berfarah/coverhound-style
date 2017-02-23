@@ -1,0 +1,28 @@
+{
+  "name": "@coverhound/eslint-config-coverhound",
+  "version": "1.0.0",
+  "description": "Coverhound's very own eslint shareable config enforcing NEXT LEVEL javascript standards.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint -c ./index.js example.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "index.js",
+    "node.js"
+  ],
+  "dependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-filenames": "^1.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  },
+  "engines": {
+    "node": ">= 4"
+  }
+}

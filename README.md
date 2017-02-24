@@ -23,3 +23,6 @@ $ npm install --save-dev @coverhound/eslint-config-coverhound
   }
 }
 ```
+
+### Editor Integration
+Visit ESLint's [integration guide](http://eslint.org/docs/user-guide/integrations) to enable ESLint in your editor of choice.

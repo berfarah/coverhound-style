@@ -1,6 +1,6 @@
 {
   "name": "@coverhound/eslint-config-coverhound",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Coverhound's very own eslint shareable config enforcing NEXT LEVEL javascript standards.",
   "main": "index.js",
   "scripts": {

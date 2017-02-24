@@ -1,4 +1,9 @@
-### ESLint Installation
+### Introduction
+This is meant to be Coverhound's living style guide for writing consistent javascript.
+It extends [Airbnb's eslint configuration](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
+If you have any suggestions, [submit an issue](https://github.com/coverhound/eslint-config-coverhound/issues)!
+
+### Installation
 
 **Step 1** Install our shareable eslint config
 

@@ -22,7 +22,7 @@ module.exports = {
     "no-console": 2,
     "semi": [2, "always"],
     "comma-dangle": [2, "only-multiline"],
-    "arrow-parens": [2, "as-needed", { "requireForBlockBody": true }],
+    "arrow-parens": [2, "always", { "requireForBlockBody": true }],
     "filenames/match-regex": [2, "^[a-z0-9\\-\\.]+$"],
 
     // warnings

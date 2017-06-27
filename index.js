@@ -24,6 +24,7 @@ module.exports = {
     "comma-dangle": [2, "only-multiline"],
     "arrow-parens": [2, "always", { "requireForBlockBody": true }],
     "filenames/match-regex": [2, "^[a-z0-9\\-\\.]+$"],
+    "prefer-arrow-callback": [2, { "allowNamedFunctions": true }],
 
     // warnings
     "indent": [1, 2, { "SwitchCase": 1 }],

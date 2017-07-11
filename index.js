@@ -2,8 +2,9 @@ module.exports = {
   "extends": "airbnb",
   "env": {
     "amd": true,
-    "browser": true,
     "es6": true,
+    "shared-node-browser": true,
+    "jest": true
   },
   "parser": "babel-eslint",
   "plugins": [

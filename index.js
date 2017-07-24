@@ -30,6 +30,7 @@ module.exports = {
     // warnings
     "indent": [1, 2, { "SwitchCase": 1 }],
     "quotes": [1, "single"],
+    "radix": [1, "as-needed"],
 
     // disabled
     "valid-jsdoc": 0,

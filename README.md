@@ -31,7 +31,7 @@ Create a `.rubocop.yml` with the following directives:
 
 ```yaml
 inherit_gem:
-  coverhound-style
+  coverhound-style:
     - default.yml
 ```
 

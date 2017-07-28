@@ -41,6 +41,6 @@ Now, run:
 $ bundle exec rubocop
 ```
 
-You do not need to include rubocop directly in your application's dependences.
-Percy-style will include a specific version of `rubocop` that is shared across
+You do not need to include `rubocop` directly in your application's dependences.
+`coverhound-style` will include a specific version of `rubocop` that is shared across
 all projects.

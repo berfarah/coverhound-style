@@ -22,7 +22,7 @@ module.exports = {
     // errors
     "no-console": 2,
     "semi": [2, "always"],
-    "comma-dangle": [2, "only-multiline"],
+    "comma-dangle": [2, "always-multiline"],
     "arrow-parens": [2, "always", { "requireForBlockBody": true }],
     "filenames/match-regex": [2, "^[a-z0-9\\-\\.]+$"],
     "prefer-arrow-callback": [2, { "allowNamedFunctions": true }],

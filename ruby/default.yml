@@ -1,0 +1,142 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  DisplayCopNames: true
+  Include:
+    - 'Rakefile'
+    - 'lib/**/*.rake'
+  Exclude:
+    - 'db/schema.rb'
+    - 'vendor/**/*'
+    - '*.gemspec'
+
+Rails:
+  Enabled: true
+
+# ========================================
+# LAYOUT
+# ========================================
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
+
+# We don't agree with this - it shouldn't ever be needed
+#
+# This would be corrected:
+#
+#   foo :one,
+#   :two, :three
+#
+# To this:
+#
+#   foo :one, :two,
+#       :three
+#
+# But we use:
+#
+#   foo(
+#     :one,
+#     :two,
+#     :three
+#   )
+Layout/AlignParameters:
+  Enabled: false
+
+# This has been unreliable for us
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+# ========================================
+# LINT
+# ========================================
+Lint/AmbiguousRegexpLiteral:
+  Enabled: false
+
+# This is specifically for our use of delegate:
+#
+#   private *delegate(
+#     ...
+#   )
+Lint/AmbiguousOperator:
+  Enabled: false
+
+# This is specifically for our use of delegate:
+#
+#   private *delegate(
+#     ...
+#   )
+Lint/UnneededSplatExpansion:
+  Enabled: false
+
+Lint/Void:
+  Enabled: false
+
+# ========================================
+# METRICS
+# ========================================
+Metrics/BlockLength:
+  Exclude:
+    - 'test/**/*'
+
+# Some of our classes are adapters or XML builders.
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 20
+
+# ========================================
+# NAMING
+# ========================================
+Naming/VariableNumber:
+  Enabled: false
+
+# ========================================
+# STYLE
+# ========================================
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+
+Style/AndOr:
+  EnforcedStyle: conditionals
+
+# This goes against the Rails style and can cause load order issues
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+# We reserve code comments for crazy code. As we don't write libraries,
+# our code does not have documentation
+Style/Documentation:
+  Enabled: false
+
+# We're ok with using double negation
+Style/DoubleNegation:
+  Enabled: false
+
+# Ruby's new version will make this unnecessary
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# We feel this rule is too strict
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
+Style/SignalException:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  Enabled: false
+
+Style/TrailingCommaInLiteral:
+  Enabled: false
+
+# This can be worse for diffs if we know it's variable
+Style/WordArray:
+  Enabled: false

@@ -1,4 +1,4 @@
-# coverhound-style
+# rubocop-config-coverhound
 
 CoverHound style guides and shared style configs.
 
@@ -8,13 +8,13 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group :test, :development do
-  gem "coverhound-style"
+  gem "rubocop-config-coverhound"
 end
 ```
 Or, for a Ruby library, add this to your gemspec:
 
 ```rb
-spec.add_development_dependency 'percy-style'
+spec.add_development_dependency "rubocop-config-coverhound"
 ```
 
 And then execute:
@@ -23,7 +23,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install coverhound-style
+    $ gem install rubocop-config-coverhound
 
 ## Usage
 
@@ -31,8 +31,7 @@ Create a `.rubocop.yml` with the following directives:
 
 ```yaml
 inherit_gem:
-  coverhound-style:
-    - default.yml
+  rubocop-config-coverhound: default.yml
 ```
 
 Now, run:
@@ -42,5 +41,5 @@ $ bundle exec rubocop
 ```
 
 You do not need to include `rubocop` directly in your application's dependences.
-`coverhound-style` will include a specific version of `rubocop` that is shared across
+`rubocop-config-coverhound` will include a specific version of `rubocop` that is shared across
 all projects.

@@ -4,6 +4,7 @@ AllCops:
   Include:
     - 'Rakefile'
     - 'lib/**/*.rake'
+    - '**/Gemfile'
   Exclude:
     - 'db/schema.rb'
     - 'vendor/**/*'

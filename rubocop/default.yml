@@ -70,9 +70,6 @@ Lint/AmbiguousOperator:
 Lint/UnneededSplatExpansion:
   Enabled: false
 
-Lint/Void:
-  Enabled: false
-
 # ========================================
 # METRICS
 # ========================================
@@ -89,12 +86,6 @@ Metrics/LineLength:
 
 Metrics/MethodLength:
   Max: 20
-
-# ========================================
-# NAMING
-# ========================================
-Naming/VariableNumber:
-  Enabled: false
 
 # ========================================
 # STYLE
@@ -122,21 +113,25 @@ Style/DoubleNegation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-# We feel this rule is too strict
-Style/PercentLiteralDelimiters:
-  Enabled: false
-
-Style/SignalException:
-  Enabled: false
-
+# While we prefer single quotes for require and gem statements, it's
+# easier to read code with a more consistent style
 Style/StringLiterals:
-  Enabled: false
+  EnforcedStyle: double_quotes
 
-Style/TrailingCommaInArguments:
-  Enabled: false
-
+# In order to have better diffs, we prefer having trailing commas:
+#
+#   [
+#     :one,
+#     :two,
+#     :three,
+#   ]
+#
 Style/TrailingCommaInLiteral:
-  Enabled: false
+  EnforcedStyleForMultiline: comma
+
+# See ^
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
 
 # This can be worse for diffs if we know it's variable
 Style/WordArray:

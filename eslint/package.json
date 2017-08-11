@@ -1,6 +1,6 @@
 {
   "name": "@coverhound/eslint-config-coverhound",
-  "version": "1.0.1",
+  "version": "1.4.0",
   "description": "Coverhound's very own eslint shareable config enforcing NEXT LEVEL javascript standards.",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "babel-eslint": "^7.1.1",
-    "eslint": "^3.16.1",
+    "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-filenames": "^1.1.0",
     "eslint-plugin-import": "^2.2.0",

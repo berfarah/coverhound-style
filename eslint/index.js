@@ -11,8 +11,7 @@ module.exports = {
   "plugins": [
     "import",
     "react",
-    "filenames",
-    "whatwg-fetch"
+    "filenames"
   ],
   "parserOptions": {
     "ecmaFeatures": {

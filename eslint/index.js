@@ -4,13 +4,15 @@ module.exports = {
     "amd": true,
     "es6": true,
     "shared-node-browser": true,
-    "jest": true
+    "jest": true,
+    "browser": true
   },
   "parser": "babel-eslint",
   "plugins": [
     "import",
     "react",
-    "filenames"
+    "filenames",
+    "whatwg-fetch"
   ],
   "parserOptions": {
     "ecmaFeatures": {

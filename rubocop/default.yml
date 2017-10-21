@@ -136,3 +136,12 @@ Style/TrailingCommaInArguments:
 # This can be worse for diffs if we know it's variable
 Style/WordArray:
   Enabled: false
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: '()'
+    '%i': '()'
+    '%I': '()'
+    '%r': '{}'
+    '%w': '()'
+    '%W': '()'

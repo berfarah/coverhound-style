@@ -88,6 +88,14 @@ Metrics/MethodLength:
   Max: 20
 
 # ========================================
+# RAILS
+# ========================================
+
+# We'e OK with syntax like `return unless foo.present?`
+Rails/Blank:
+  UnlessPresent: false
+
+# ========================================
 # STYLE
 # ========================================
 Style/Alias:
@@ -136,3 +144,4 @@ Style/TrailingCommaInArguments:
 # This can be worse for diffs if we know it's variable
 Style/WordArray:
   Enabled: false
+

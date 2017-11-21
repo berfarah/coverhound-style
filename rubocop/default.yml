@@ -121,6 +121,11 @@ Style/DoubleNegation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+# Better to use `== 0` than `.zero?` at least for some cases
+Style/NumericPredicate:
+  Enabled: false
+
+
 # While we prefer single quotes for require and gem statements, it's
 # easier to read code with a more consistent style
 Style/StringLiterals:

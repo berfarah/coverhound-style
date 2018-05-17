@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/coverhound/coverhound-style"
   spec.files         = Dir["README.md", "default.yml"]
 
-  spec.add_dependency "rubocop", "~> 0.49"
+  spec.add_dependency "rubocop", "~> 0.56"
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
 end

@@ -7,6 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = "1.2.0"
   spec.authors       = ["Bernardo Farah"]
   spec.email         = ["ber@bernardo.me"]
+  spec.licenses      = ["MIT"]
 
   spec.summary       = "CoverHound style guides and shared style configs."
   spec.homepage      = "https://github.com/coverhound/coverhound-style"

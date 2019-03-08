@@ -11,6 +11,7 @@ module.exports = {
   "plugins": [
     "import",
     "react",
+    "react-hooks",
     "filenames"
   ],
   "parserOptions": {
@@ -35,6 +36,10 @@ module.exports = {
 
     // disabled
     "valid-jsdoc": 0,
-    "require-jsdoc": 0
+    "require-jsdoc": 0,
+
+    // React
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 };
